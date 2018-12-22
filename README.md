@@ -2,6 +2,15 @@
 
 ## 문서 개요
 1. [프로그램 개요](https://github.com/Uanid/OfflineJudgment2#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EA%B0%9C%EC%9A%94)
+2. [사용 방법](https://github.com/Uanid/OfflineJudgment2#%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95)
+2-1. [1. 과제 파일 정규화](https://github.com/Uanid/OfflineJudgment2#0%EA%B3%BC%EC%A0%9C-%ED%8C%8C%EC%9D%BC-%EC%A0%95%EA%B7%9C%ED%99%94)
+2-2. [2. 정규화된 파일 확인](https://github.com/Uanid/OfflineJudgment2#1%EC%A0%95%EA%B7%9C%ED%99%94%EB%90%9C-%ED%8C%8C%EC%9D%BC-%ED%99%95%EC%9D%B8)
+2-3. [3. 자동 채점 하기](https://github.com/Uanid/OfflineJudgment2#2%EC%B1%84%EC%A0%90-%ED%95%98%EA%B8%B0)
+2-4. [4. 유사도 구하기](https://github.com/Uanid/OfflineJudgment2#3%EC%9C%A0%EC%82%AC%EB%8F%84-%EA%B5%AC%ED%95%98%EA%B8%B0)
+2-5. [5. 파일 삭제](https://github.com/Uanid/OfflineJudgment2#4%ED%8C%8C%EC%9D%BC-%EC%82%AD%EC%A0%9C)
+2-6. [6. 업로드 자동화](https://github.com/Uanid/OfflineJudgment2#5%EC%97%85%EB%A1%9C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94)
+3. [프로젝트 개요](https://github.com/Uanid/OfflineJudgment2#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94)
+4. [업데이트 로그](https://github.com/Uanid/OfflineJudgment2#%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%A1%9C%EA%B7%B8)
 
 
 
@@ -37,7 +46,7 @@ Java기반으로 작동하는 코드이기에 실행시에는 당연히 JVM이 �
 컴파일이 완료된 파일들과 사용방법은 [Release](https://github.com/Uanid/OfflineJudgment/releases)에서 다운로드 받을 수 있습니다.
 *각 빌드마다 사용방법이 차이가 날 수 있으니 꼭 사용방법을 읽어주세요.*
 
-#### 0.과제 파일 정규화
+#### 1. 과제 파일 정규화
 명령: 1
 
 블랙보드 -> 수업분반 -> 제어판 -> 성적관리센터 -> 과제 -> '3주차 기초 코딩' 화살표 클릭 -> 항목 다운로드 -> 전체 선택 후 다운로드
@@ -48,13 +57,13 @@ Java기반으로 작동하는 코드이기에 실행시에는 당연히 JVM이 �
 
 분반 출석부와 연계해 누락된 학생들을 찾아내려면 분반 코드를 입력, 아니면 0
 
-#### 1.정규화된 파일 확인
+#### 2. 정규화된 파일 확인
 제가 개발한 정규화 기능이 완벽하지 않기도 합니다만,
 사실 제출한 과제들을 확인하다 보면 학생들 중 꼭 한두명씩은 제출 양식을 지키지 않습니다.
 
 그렇기 때문에 사람이 일일히 확인해서 누락된 부분을 수정해야 합니다. **제출요약.xslsx**파일을 참고해서 누락된 학생들의 과제 파일을 옮겨줘야 합니다. 다만 이 때 학생별 폴더의 **학번 이름**형태가 유지되어야 합니다.
 
-#### 2.채점 하기
+#### 3. 채점 하기
 명령:2
 
 정규화와 마찬가지로 분반을 추가로 입력하면 됩니다.
@@ -69,7 +78,7 @@ Java기반으로 작동하는 코드이기에 실행시에는 당연히 JVM이 �
 
 채점 명령을 수행하면 실행 결과가 **엑셀 파일**로 나옵니다.
 
-#### 3.유사도 구하기
+#### 4. 유사도 구하기
 명령: 3
 
 채점 후에 생성된 **Code Distance**폴더를 바탕으로 실행 결과가 **엑셀 파일**로 나옵니다.
@@ -78,12 +87,12 @@ Java기반으로 작동하는 코드이기에 실행시에는 당연히 JVM이 �
 
 상황에 따라선 70% 이상도 검사해야 합니다.
 
-#### 4.파일 삭제
+#### 5. 파일 삭제
 명령: 4
 
 프로그램 실행과 관계없는 데이터(채점 결과, 중간 파일 등)을 전부 삭제시켜 프로그램 파일만 남기는 기능입니다.
 
-#### 5.업로드 자동화
+#### 6. 업로드 자동화
 명령: 5
 
 블랙보드에 일괄 업로드가 가능하도록 하는 업로드 파일을 만듭니다.
