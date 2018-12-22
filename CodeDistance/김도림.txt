@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+
+
+def fx(free,normal):                    #결제금액
+	if birthmonth==04:
+		if free>=04:
+			price=free*54000*65/100+normal*30000
+		else:
+			price=1*54000*70/100+(free-1)*54000*76/100+normal*30000
+	else:
+		price=free*54000+normal*30000
+	print price
+	
+def gx(free,normal):                    #할인금액
+	if birthmonth==04:
+		if free>=04:
+			sale=free*54000*35/100+normal*0
+		else:
+			sale=1*54000*30/100+(free-1)*54000*24/100+normal*0
+	else:
+		sale=0*free+normal*0
+	print sale
+free=input() #자유이용권 개수
+normal=input() #일반입장권 개수
+birth=int(raw_input()) #생년월일
+
+birthmonth=birth/100%100 #태어난 달
+
+gx(free,normal)
+fx(free,normal)

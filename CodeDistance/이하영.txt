@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+
+#자유이용권, 입장권, 생년월일을 변수로 설정한다.
+freeticket = input()
+entryticket = input()
+yymmdd = int(raw_input())
+
+#총가격은 쓰기편하도록 미리 계산해놓는다
+totalprice = freeticket*54000 + entryticket*30000
+
+#4월생인경우
+if (yymmdd/100)%100 == 4:
+    
+#4월생이 자유이용권을 4장이상 사는 경우
+	if freeticket >= 4:
+		sale = int((freeticket*54000*35/100 + entryticket*30000*0+5)/10*10)
+		
+#4월생이 자유이용권을 4장이하로 사는경우
+	elif 1<=freeticket<4:
+		sale = int((54000*30/100 + (freeticket - 1)*54000*24/100 + entryticket*30000*0+5)/10*10)
+		
+#4월생이 아닌경우
+else: 
+	sale = 0
+	
+print sale
+print totalprice - sale

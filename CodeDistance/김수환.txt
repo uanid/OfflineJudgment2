@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+
+Ftickets=input()                                                                
+Gtickets=input()                                                                
+birth=int(raw_input())                                                          
+
+Fcost=Ftickets*54000                                                            
+Gcost=Gtickets*30000                                                           
+month=(birth/100)%100           
+
+if month==4 and Ftickets>=4:
+    Fcost=54000*Ftickets-54000*Ftickets*35/100
+    
+elif month==4:
+    Fcost=54000*Ftickets-54000*30/100-54000*(Ftickets-1)*24/100
+    
+print (54000*Ftickets)-Fcost
+print Fcost+Gcost                                                               

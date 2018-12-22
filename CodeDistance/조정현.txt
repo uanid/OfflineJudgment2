@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+
+free = input()		#자유이용권 티켓 수
+normal = int(raw_input())		#일반입장권 티켓 수
+birth = int(raw_input())		#철수의 생년월일
+month = birth%10000/100		#철수가 몇월생인지 판단
+
+def price(a,b,c):
+	total = 54000*a + 30000*b		#할인금액을 적용하지않은 인원수에 따른 티켓 값
+	if c==4:		#입력한 생일이 4월일 경우
+		if 1<= a < 4:		#인원 수가 4명미만일경우(개인)
+			discount = 54000*3/10 + 54000*(a-1)*24/100		#할인금액
+			print discount
+			print total - discount		#전체 티켓값 - 할인금액
+		elif a>=4:		#인원 수가 4명이상일 경우(단체)
+			discount = 54000*a*35/100
+			print discount
+			print total - discount
+	else:		#입력한 생일이 4월이 아닌 경우
+		print "0"		#할인 대상이 아니므로 
+		print total
+			
+			
+			
+price(free,normal,month)

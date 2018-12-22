@@ -1,0 +1,57 @@
+# -*- coding: utf-8 -*-
+
+a = input()                     #자유이용권 티켓 수
+b = input()                     #일반이용권 티켓 수
+birth = int(raw_input())        #생년월일
+
+t = birth % 10000               #월일 뽑아내기
+p1 = t / 100                    #월 뽑아내기
+
+if p1 == 4:                     #생일이4월 일 때
+    if 1 <= a < 4:              #자유이용권이 1개이상4개미만일때
+        dc = 54000 * 0.3 + 54000 * 0.24 * (a - 1)     #할인가격
+        count = 30000 * b + 54000 * a - dc            #가격
+        last1 = count % 10                          #가격 일의자리에서 반올림
+
+        if last1 >= 5:
+            result1 = count - last1 + 10
+
+        else:
+            result1 = count - last1
+
+        last2 = dc % 10                           #가격 일의자리에서 반올림
+
+        if last2 >= 5:
+            result2 = dc - last2 + 10
+
+        else:
+            result2 = dc - last2
+
+        print int(result2)                    #반올림된 할인가격  
+        print int(result1)                    #반올림된 전체가격
+
+    elif a >= 4:                                 #자유이용권이 4장 이상일때
+        dc = (54000 * a * 0.35)   #할인받는값
+        count = (30000 * b + 54000 * a) - dc  #내는값
+        last1 = count % 10                  #가격 일의자리에서 반올림
+
+        if last1 >= 5:
+            result1 = count - last1 + 10
+
+        else:
+            result1 = count - last1
+
+        last2 = dc % 10                  #할인가격 일의자리에서 반올림
+
+        if last2 >= 5:
+            result2 = dc - last2 + 10
+
+        else:
+            result2 = dc - last2
+
+        print int(result2)          #반올림된 할인가격
+        print int(result1)          #반올림된 전체가격
+
+else:                                #생일이 4월이 아닐때
+    print 0                         #할인가격
+    print 54000 * a + 30000 * b     #전체가격

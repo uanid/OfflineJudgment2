@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-  
+
+freeprice=54000   #자유이용권의 정상 가격
+normalprice=30000 #일반입장권의 정상 가격
+
+freeticket=input() #구입하려는 자유이용권 티켓의 갯수
+nomalticket=input() #구입하려는 일반입장권 티켓의 갯수
+birthday=int(raw_input()) #철수에 생년월일
+month=(birthday/100)%100 #철수에 생년월일 중 월 을 뜻한다
+
+
+
+if month==4:  #철수가 4월달 생일일때
+   if 1<=freeticket<4: #자유이용권 티켓을 4장 미만 구매할경우 (자유이용권은 반드시 하나 이상)
+       discount=(freeprice*3/10+freeprice*(freeticket-1)*24/100) #4월달 생일 고객은 30%, 동반 고객은 24%를 할인받는다
+   else:
+       discount=(freeprice*freeticket*35/100) #그렇지 않는경우, 즉 티켓을 4장 이상 구매하는 경우 단체 할인이 적용되어 모두 35%를 할인받는다
+else:
+    discount=0
+	
+print discount
+
+total=int((freeprice*freeticket+normalprice*nomalticket-discount+5)/10*10) #총 내야하는 비용 (정수로 계산)
+
+print total

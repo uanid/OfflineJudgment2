@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+
+a = input()
+b = input()
+birth = int(raw_input())
+ 
+birthmonth = birth / 100 % 100
+
+if a<=3 and birthmonth == 4 :
+	print (54000*a+30000*b)-(37800+41040*(a-1)+30000*b)
+	print (37800+41040*(a-1)+30000*b)
+elif a>=4 and birthmonth == 4 :
+	print (54000*a+30000*b)-(35100*a+30000*b)
+	print (35100*a+30000*b)
+else :
+	print ((54000*a+30000*b)-(54000*a+30000*b))
+	print (54000*a+30000*b)

@@ -1,0 +1,20 @@
+# -*- coding:utf-8 -*-
+
+#티켓 할인 가격 계산 프로그램 
+
+freeuser=input()               #freeuser(철수가 구매한 자유이용권 개수)
+user=input()                   #user(철수가 구매한 일반이용권 개수)
+birth=int(raw_input())         #birth(생년월일)
+
+a=freeuser*54000               # a(자유이용권가격)
+b=30000*user                   # b(일반이용권가격)
+month=(birth/100)%100          # month(태어난 월)
+
+if month==4 and freeuser>=4:
+ a=54000*freeuser-54000*freeuser*35/100
+ 
+elif month==4:
+ a=54000*freeuser-54000*30/100-54000*(freeuser-1)*24/100
+ 
+print (54000*freeuser)-a
+print a+b

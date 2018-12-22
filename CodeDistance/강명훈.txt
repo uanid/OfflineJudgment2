@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+#티켓 할인 가격 계산 프로그램
+
+
+freeticket=input()              #철수가 구매하는 자유이용권 수
+normalticket=input()            #철수가 구매하는 일반이용권 수
+birth=int(raw_input())          #생년월일   
+month=(birth%10000)/100         #태어난 달
+fc=freeticket*54000             #fc=자유이용권가격
+nc=normalticket*30000           #nc=일반이용권가격
+
+if month==4 and freeticket>=4:
+   fc=freeticket*int((54000*0.65))
+
+elif month==4:
+   fc=int(freeticket*54000-(freeticket-1)*(54000*0.24)-54000*0.3)
+   
+print (freeticket*54000)-fc
+print fc+nc   

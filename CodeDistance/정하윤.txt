@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+
+def price (birth, free, normal):
+   if int(birth/100%100) == 4:
+      if free >=4:		#4월달 생일인 고객이 자유이용권4매 이상 구매한 경우 내야할 금액
+         total=free*54000+normal*30000-free*54000*35/100
+      elif free == 0:		#4월달 생일인 고객이 일반 입장권만 구매한 경우 내야할 금액
+          total=normal*30000
+      else:			#위의 경우를 제외한 4월달 생일인 고객이 표를 구매한 경우 내야할 금액
+         total=free*54000+normal*30000-54000*3/10-(free-1)*54000*24/100
+   elif int(birth/100%100) != 4:		#4월달 생일이 아닌 고객이 표를 구매한 경우 내야할 금액
+      total=free*54000+normal*30000
+   return total
+   
+def sale(birth, free, normal):
+   if int(birth/100%100) == 4:		
+      if free >= 4:			#4월달 생일인 고객이 자유이용권4매 이상 구매한 경우 할인금액
+         total=free*54000*35/100
+      elif free == 0:		#4월달 생일인 고객이 일반 입장권만 구매한 경우 할인금액	
+         total=0
+      else:   		#위의 경우를 제외한 4월달 생일인 고객이 표를 구매한 경우 할인금액
+         total=54000*3/10+(free-1)*54000*24/100
+   elif int(birth/100%100) != 4:		#4월달 생일이 아닌 고객이 표를 구매한 경우 할인금액
+      total=0
+   return total
+
+free=int(raw_input())
+normal=int(raw_input())
+birth=int(raw_input())
+print(int(sale(birth, free, normal)))
+print(int(price(birth, free, normal)))

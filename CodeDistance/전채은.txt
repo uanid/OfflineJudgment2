@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+#5주차 과제
+
+free=int(raw_input())                                                            #자유이용권 매수 입력받기
+normal=int(raw_input())                                                             #일반입장권 매수 입력받기
+birth=int(raw_input())                                                              #생일 입력
+
+def price (birth, free, normal):                                                 #구매가격 함수 정의
+	if int(birth/100%100) == 4:                                                     #생일이 4월인 경우             
+		if free >=4:                                                             #자유이용권 매수가 4장 이상
+			total=free*54000+normal*30000-free*54000*35/100
+		elif free == 0:                                                          #자유이용권 매수가 0장
+		    total=normal*30000
+		else:                                                                       #자유이원권 매수가 4장 미만
+			total=free*54000+normal*30000-54000*3/10-(free-1)*54000*24/100
+	elif int(birth/100%100) != 4:                                                   #생일이 4월이 아닌 경우
+		total=free*54000+normal*30000
+	return total
+	
+def sale(birth, free, normal):                                                   #할인가격 함수 정의
+	if int(birth/100%100) == 4:                                                     #생일이 4월인 경우
+		if free >= 4:                                                            #자유이용권 매수가 4장 이상
+			total=free*54000*35/100
+		elif free == 0:                                                          #자유이용권 매수가 0장
+			total=0
+		else:	                                                                    #자유이용권 매수가 4장 미만
+			total=54000*3/10+(free-1)*54000*24/100
+	elif int(birth/100%100) != 4:                                                   #생일이 4월이 아닌 경우
+		total=0 
+	return total
+
+
+print(int(sale(birth, free, normal)))                                            #할인금액 출력
+print(int(price(birth, free, normal)))                                           #구매가격 출력

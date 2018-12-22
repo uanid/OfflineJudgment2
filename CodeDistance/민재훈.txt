@@ -1,0 +1,43 @@
+# -*- coding:utf-8 -*-
+
+free=input()
+general=input()
+birth=raw_input()
+num=int(birth)
+
+# free는 자유이용권, general은 일반이용권, birth는 생년월일을 나타내는 변수이다.
+
+def sale1(free,general):
+	s=(54000*3/10)+(54000*(free-1)*24/100)
+	print s 
+	if (((54000*free+30000*general)-s)%10)>=5:
+		print ((54000*free+30000*general)-s)-(((54000*free+30000*general)-s)%10)+10
+	if (((54000*free+30000*general)-s)%10)<5:
+		print ((54000*free+30000*general)-s)-(((54000*free+30000*general)-s)%10)
+
+def sale2(free,general):
+	s=(54000*free*35/100)
+	print s
+	if (((54000*free+30000*general)-s)%10)>=5:
+		print ((54000*free+30000*general)-s)-(((54000*free+30000*general)-s)%10)+10
+	if (((54000*free+30000*general)-s)%10)<5:
+		print ((54000*free+30000*general)-s)-(((54000*free+30000*general)-s)%10)
+
+
+#sale1은 총 이용권 개수가 4매미만, sale2는 4매이상 일때의 함수이다.
+#변수 s는 할인금액을 나타낸다.		
+
+if free>=4:
+	if (num%10000/100)==4:
+		sale2(free,general)
+	
+	else:
+		print "0"
+		print free*54000+general*30000
+
+if free<4 :
+	if (num%10000/100)==4:
+		sale1(free,general)
+	else:
+		print "0"
+		print free*54000+general*30000

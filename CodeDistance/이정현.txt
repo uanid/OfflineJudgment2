@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+
+Freeticket = input()
+Ticket = input()
+Birthday = int(raw_input())
+
+Fprice = 54000 * Freeticket
+Tprice = 30000 * Ticket
+Month = (Birthday/100)%100
+
+if Month==4 and Freeticket>=4:
+    Fprice = (54000 * Freeticket) - 54000 * Freeticket * 35/100
+
+elif Month==4:
+    Fprice = 54000 * Freeticket - 54000*30/100 -54000*(Freeticket-1)*24/100
+
+print (54000 * Freeticket) - Fprice
+print Fprice + Tprice

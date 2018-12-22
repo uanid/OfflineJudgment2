@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+
+freeTicket=input()
+normalTicket=input()
+birth=raw_input()
+sum=0
+left=0
+birthmonth=birth[3]
+if birthmonth=="4":
+    if freeTicket>=4:
+        sum=54000*freeTicket*(6.5)/10+30000*normalTicket
+        left=54000*freeTicket*(3.5)/10
+    else :
+        sum=54000*7/10+54000*76/100*(freeTicket-1)+30000*normalTicket
+        left=54000*3/10+54000*24/100*(freeTicket-1)
+else :
+    sum=54000*freeTicket+30000*normalTicket
+print int(round(left))
+print int(round(sum))

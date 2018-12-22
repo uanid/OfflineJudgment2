@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="secondstring-20120620.jar"/>
+	<classpathentry kind="lib" path="java-string-similarity-0.23.jar"/>
+	<classpathentry kind="lib" path="lib/POI-OOXML/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="lib/POI-OOXML/poi-ooxml-3.15.jar"/>
+	<classpathentry kind="lib" path="lib/POI-OOXML/poi-ooxml-schemas-3.15.jar"/>
+	<classpathentry kind="lib" path="lib/POI-OOXML/poi-scratchpad-3.15.jar"/>
+	<classpathentry kind="lib" path="lib/POI-OOXML/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="lib/POI/poi-3.15.jar"/>
+	<classpathentry kind="lib" path="lib/POI/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="lib/POI/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="lib/POI/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/POI/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="lib/POI/log4j-1.2.17.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

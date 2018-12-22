@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+
+free=input()
+normal=input()
+birth=int(raw_input())
+
+month=birth%10000
+
+# birth에서 10000으로 나눈 나머지가 400보다 크고 500보다 작으면 생일이 4월이다.
+#16200=54000*0.3 12960*0.24
+#일반 입장권은 할인이 안 된다.
+if 400<month and month<500 and free<4:
+    sale=16200+(free-1)*12960
+elif 400<month and month<500 and free>=4:
+    sale=18900*free
+elif month<400 or month>500:
+    sale=0
+
+money=54000*free+30000*normal-sale
+print sale
+print money

@@ -1,0 +1,23 @@
+# -*- coding:utf-8 -*-
+
+# 5주차 과제
+
+freepass = int(input(" ")) #freepass count
+ticket = int(input(" ")) #ticket count
+birthday = int(raw_input(" ")) #yymmdd
+
+
+# Relationship between birthday month and freepass count
+
+if (birthday/100)%100 == 4 and freepass >= 4: 
+    discount = (54000*freepass)*35/100
+elif (birthday/100)%100 == 4 and freepass < 4 and freepass >= 1:
+    discount = (54000)*3/10 + (54000*(freepass-1))*24/100
+elif (birthday/100)%100 != 4:
+    discount = 0
+
+
+print discount
+# payment
+total = (54000*freepass+30000*ticket-discount+5)/10*10
+print total

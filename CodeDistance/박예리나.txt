@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+
+freepassticket = input() #자유이용권 티켓 수를 읽어들인다
+generalticket = input()  #일반 입장권 티켓 수를 읽어들인다
+birth = raw_input()      #생년월일을 읽어들인다
+
+free=54000
+general=30000
+
+month = (int(birth)/100)%100 #생년월일 추출
+
+if month == 4:  #생일이 4월달인 경우
+	if freepassticket >= 4: #자유이용권을 4매 이상 구매할 경우
+		discount = freepassticket*free*35/100
+	else:                   #자유이용권을 4매 미만 구매할 경우
+		discount = free*30/100+(freepassticket-1)*free*24/100
+		
+else:           #생일이 4월달이 아닌 경우
+	discount=0
+
+cost=(free*freepassticket+general*generalticket)-discount #비용 추출
+
+print discount  #할인 금액 출력
+print cost      #내야하는 금액 출력

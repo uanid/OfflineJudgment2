@@ -1,0 +1,34 @@
+# -*- coding:utf-8 -*-
+
+x=input()  #자유이용권 티켓수
+y=input()  #일반입장권 티켓수
+z=int(raw_input()) #생년월일
+
+mm=z/100%100  
+
+if mm==04 and x>=4:
+   w=x*54000*35/100
+   r=x*54000*65/100+y*30000
+elif mm==04 and x<=4:
+   w=54000*30/100+(x-1)*54000*24/100
+   r=54000*70/100+(x-1)*54000*76/100+y*30000
+elif mm!=04:
+   w=0
+   r=x*54000+y*30000
+   
+a=w%10
+b=r%10
+
+if a>=5 and a<=9:
+   w=w+10
+elif a>=0 and a<=4:
+   w=w-a
+   
+if b>=5 and b<=9:
+   r=r+10
+elif b>=0 and b<=4:
+   r=r-b
+   
+   
+print w  #할인받는 금액
+print r  #내야하는 금액

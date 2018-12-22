@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*- 
+
+# 티켓 할인 가격 계산 프로그램
+
+f=input() #자유이용권 티켓 수  
+n=input() #일반 입장권 티켓 수 
+b=int(raw_input())	#생년월일 
+
+
+def paidmoney(x,y,z):  #함수 - 할인가격 및 내야하는 가격
+	m1=54000	#자유이용권 가격
+	m2=30000	#일반 입장권 가격
+	if (z/100%100)==4:	#생일이 4월인 사람을 포함할때
+		if 1<=x<4:	#자유이용권 티켓이 1개이상 4개 미만일 경우 
+			discounted=m1*30/100+m1*24/100*(x-1)	#할인가격
+			print discounted
+			print (m1*x)+(m2*y)-discounted	#총 가격
+		elif x>=4: #자유이용원 티켓이 4개 이상일 경우
+			discounted=m1*x*35/100 
+			print discounted
+			print (m1*x)+(m2*y)-discounted
+	else:	#생일이 4월이 아닌 경우 
+		print "0"
+		print (m1*x)+(m2*y)
+		
+paidmoney(f,n,b)
