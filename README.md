@@ -10,8 +10,8 @@
 - [5. 파일 삭제](https://github.com/Uanid/OfflineJudgment2#5-%ED%8C%8C%EC%9D%BC-%EC%82%AD%EC%A0%9C)
 - [6. 업로드 자동화](https://github.com/Uanid/OfflineJudgment2#6-%EC%97%85%EB%A1%9C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94)
 3. [프로젝트 개요](https://github.com/Uanid/OfflineJudgment2#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94)
-4. [업데이트 로그](https://github.com/Uanid/OfflineJudgment2#%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%A1%9C%EA%B7%B8)
-5. [Config 설정](https://github.com/Uanid/OfflineJudgment2#config-%EC%84%A4%EC%A0%95)
+4. [Config 설정](https://github.com/Uanid/OfflineJudgment2#config-%EC%84%A4%EC%A0%95)
+5. [업데이트 로그](https://github.com/Uanid/OfflineJudgment2#%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%A1%9C%EA%B7%B8)
 
 -------------------
 
@@ -136,10 +136,18 @@ Java기반으로 작동하는 코드이기에 실행시에는 당연히 JVM이 �
 하지만 **한셀**이나 **노트패드 plus plus**로 열면 잘 열리니 값을 확인하거나 수정할 필요가 있다면 이 툴들을 이용해 수정하면 됩니다.
 
 ---------------------------
+
 ### 프로젝트 개요
 Eclipse에서 사용하던 프로젝트를 그대로 업로드했습니다.
 gitignore설정하는걸 까먹어서... 기타 잡다한 파일들도 그대로 올라가 있습니다.
 대신, 별도 설정 없이 Eclipse에 그대로 불러올 수 있다는건 장점이겠죠?
+
+
+--------------------------------------
+
+#### Config 설정
+
+소스코드의 [config-example.yaml](https://github.com/Uanid/OfflineJudgment2/blob/master/config-example.yaml)파일을 읽어주세요.
 
 ----------------------
 ### 업데이트 로그
@@ -183,10 +191,3 @@ gitignore설정하는걸 까먹어서... 기타 잡다한 파일들도 그대로
   - 채점 기능이 input, low, high, equal로 세분화
   - 채점 결과 파일에 전체 코드 요약해서 추가
   - config에 input("")로 만들기 기능 추가 
-
-
---------------------------------------
-
-#### Config 설정
-
-소스코드의 ***[config-example.yaml](https://github.com/Uanid/OfflineJudgment2/blob/master/config-example.yaml)***파일을 읽어주세요.
