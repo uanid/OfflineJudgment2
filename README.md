@@ -189,4 +189,4 @@ gitignore설정하는걸 까먹어서... 기타 잡다한 파일들도 그대로
 
 #### Config 설정
 
-소스코드의 ***config-example.yaml***파일을 읽어주세요.
+소스코드의 ***[config-example.yaml](https://github.com/Uanid/OfflineJudgment2/blob/master/config-example.yaml)***파일을 읽어주세요.
