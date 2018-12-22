@@ -3,12 +3,12 @@
 ## 문서 개요
 1. [프로그램 개요](https://github.com/Uanid/OfflineJudgment2#%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EA%B0%9C%EC%9A%94)
 2. [사용 방법](https://github.com/Uanid/OfflineJudgment2#%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95)
-- [1. 과제 파일 정규화](https://github.com/Uanid/OfflineJudgment2#0%EA%B3%BC%EC%A0%9C-%ED%8C%8C%EC%9D%BC-%EC%A0%95%EA%B7%9C%ED%99%94)
-- [2. 정규화된 파일 확인](https://github.com/Uanid/OfflineJudgment2#1%EC%A0%95%EA%B7%9C%ED%99%94%EB%90%9C-%ED%8C%8C%EC%9D%BC-%ED%99%95%EC%9D%B8)
-- [3. 자동 채점 하기](https://github.com/Uanid/OfflineJudgment2#2%EC%B1%84%EC%A0%90-%ED%95%98%EA%B8%B0)
-- [4. 유사도 구하기](https://github.com/Uanid/OfflineJudgment2#3%EC%9C%A0%EC%82%AC%EB%8F%84-%EA%B5%AC%ED%95%98%EA%B8%B0)
-- [5. 파일 삭제](https://github.com/Uanid/OfflineJudgment2#4%ED%8C%8C%EC%9D%BC-%EC%82%AD%EC%A0%9C)
-- [6. 업로드 자동화](https://github.com/Uanid/OfflineJudgment2#5%EC%97%85%EB%A1%9C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94)
+- [1. 과제 파일 정규화](https://github.com/Uanid/OfflineJudgment2#1-%EA%B3%BC%EC%A0%9C-%ED%8C%8C%EC%9D%BC-%EC%A0%95%EA%B7%9C%ED%99%94)
+- [2. 정규화된 파일 확인](https://github.com/Uanid/OfflineJudgment2#2-%EC%A0%95%EA%B7%9C%ED%99%94%EB%90%9C-%ED%8C%8C%EC%9D%BC-%ED%99%95%EC%9D%B8)
+- [3. 자동 채점 하기](https://github.com/Uanid/OfflineJudgment2#3-%EC%B1%84%EC%A0%90-%ED%95%98%EA%B8%B0)
+- [4. 유사도 구하기](https://github.com/Uanid/OfflineJudgment2#4-%EC%9C%A0%EC%82%AC%EB%8F%84-%EA%B5%AC%ED%95%98%EA%B8%B0)
+- [5. 파일 삭제](https://github.com/Uanid/OfflineJudgment2#5-%ED%8C%8C%EC%9D%BC-%EC%82%AD%EC%A0%9C)
+- [6. 업로드 자동화](https://github.com/Uanid/OfflineJudgment2#6-%EC%97%85%EB%A1%9C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94)
 3. [프로젝트 개요](https://github.com/Uanid/OfflineJudgment2#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94)
 4. [업데이트 로그](https://github.com/Uanid/OfflineJudgment2#%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%A1%9C%EA%B7%B8)
 
