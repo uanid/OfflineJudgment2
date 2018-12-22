@@ -11,6 +11,7 @@
 - [6. 업로드 자동화](https://github.com/Uanid/OfflineJudgment2#6-%EC%97%85%EB%A1%9C%EB%93%9C-%EC%9E%90%EB%8F%99%ED%99%94)
 3. [프로젝트 개요](https://github.com/Uanid/OfflineJudgment2#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B0%9C%EC%9A%94)
 4. [업데이트 로그](https://github.com/Uanid/OfflineJudgment2#%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%A1%9C%EA%B7%B8)
+5. [Config 설정](https://github.com/Uanid/OfflineJudgment2#config-%EC%84%A4%EC%A0%95)
 
 -------------------
 
