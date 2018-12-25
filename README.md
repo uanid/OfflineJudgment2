@@ -24,7 +24,7 @@
 
 프로그램 이름: OfflineJudment2
 
-개발자: Uanid (
+개발자: Uanid (uanid@outlook.com)
 
 기능:
 1. 블랙보드에서 다운받은 과제 파일들을 보기 좋게 정규화 및 엑셀로 정리
